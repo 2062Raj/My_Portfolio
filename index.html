@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f9b5d57551.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Cyber Security Analyst</p>
+                <h1>Hi, I'm <span>Giriraj</span><br> KC From Nepal</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m Giriraj KC, a passionate and dedicated cybersecurity enthusiast from Nepal.
+                         With a strong foundation in computer science and hands-on experience in coding,
+                          cryptography, and digital forensics, I aim to contribute to the rapidly evolving
+                           world of cybersecurity. My journey has been fueled by curiosity and a commitment
+                            to leveraging technology to solve complex challenges.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Network and System Security</span><br>Protect Networks and Systems</li>
+                                <li><span>Security Auditing</span><br>Assess systems, identify vulnerabilities and improve</li>
+                                <li><span>Networks Forensics</span><br>Analyze traffic, trace breaches and investigate</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>February 2024 - Current</span><br>Cybersecurity Intern at XYZ Tech Solution</li>
+                                <li><span>June 2023 - February 2024</span><br>Digital Forensics Intern at Leapfrog Tech Nepal</li>
+                                <li><span>January 2023 - June 2023</span><br>Security Analyst at Nepal Telecom</li>
+                                <li><span>January 2022 - December 2022</span><br>Cybersecurity Analyst at SecureNepal</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023</span><br>+2 from Morgan International Secondary School</li>
+                                <li><span>2021</span><br>SEE from Highlight English Boarding School</li>
+                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+     <!--services  -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Network Security Monitoring</h2>
+                    <p>Offering continuous monitoring, vulnerability scanning, and threat
+                         detection to safeguard networks against cyberattacks and unauthorized 
+                         access.</p>
+                         <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Digital Forensics Investigation</h2>
+                    <p>Conducting thorough investigations into cyber incidents, 
+                        recovering deleted data, and preserving digital evidence for legal 
+                        and security purposes.</p>
+                         <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Incident Response and Risk Management</h2>
+                    <p>Providing rapid response to security breaches, 
+                        identifying the cause of incidents, and implementing strategies 
+                        to minimize risks and prevent future attacks.</p>
+                         <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- Portfolio -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.png">
+                    <div class="layer">
+                        <h3>Network Security</h3>
+                        <p>Secure your internet and network from anonymous breaches.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.webp">
+                    <div class="layer">
+                        <h3>Forensics Investigation</h3>
+                        <p>I can assist your forensics team for any investigation and research.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.webp">
+                    <div class="layer">
+                        <h3>Data Recovery</h3>
+                        <p>Protect your data from unwanted loss. Don't fear I am here to find your lost data.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+     </div>
+     <!-- Contact -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-square-envelope"></i>giriraj2061@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+977 9865225682</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/giriraj.mahara.988"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/giriraj_mh/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@giriraj03_"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.linkedin.com/in/giriraj-kc-6a215b268/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Giriraj<i class="fa-solid fa-heart"></i></p>
+        </div>
+      </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby22lMbw3Ro6dFGFbLpTgxEb0DrTb0PbKLtyu0iVgDohSRyFKN_cwv-xSmNmNXzA_2EAQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
